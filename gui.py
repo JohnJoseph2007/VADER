@@ -27,6 +27,7 @@ ttk.Button(mainframe, text="Calculate", command=valuereturn).grid(column=2, row=
 pos = StringVar()
 neg = StringVar()
 neu = StringVar()
+most = StringVar()
 ttk.Label(mainframe, text="How you're feeling:").grid(column=1, row=3, sticky=(W, E))
 ttk.Label(mainframe, text="Positive: ").grid(column=1, row=4, sticky=(W, E))
 ttk.Label(mainframe, text="Neutral: ").grid(column=1, row=5, sticky=(W, E))
@@ -37,6 +38,8 @@ ttk.Label(mainframe, textvariable=neg).grid(column=2, row=6, sticky=(W, E))
 ttk.Label(mainframe, text="%").grid(column=3, row=4, sticky=(W, E))
 ttk.Label(mainframe, text="%").grid(column=3, row=5, sticky=(W, E))
 ttk.Label(mainframe, text="%").grid(column=3, row=6, sticky=(W, E))
+ttk.Label(mainframe, text="You're feeling mostly: ").grid(column=1, row=7, sticky=(W,E))
+ttk.Label(mainframe, textvariable=most).grid(column=3, row=7, sticky=(W,E))
 
 for child in mainframe.winfo_children():
     child.grid_configure(padx=5, pady=5)

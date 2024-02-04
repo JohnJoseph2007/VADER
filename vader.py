@@ -18,3 +18,4 @@ class Vader:
         self.positive = score['pos']
         self.negative = score['neg']
         self.neutral = score['neu']
+        self.most = max(score)
